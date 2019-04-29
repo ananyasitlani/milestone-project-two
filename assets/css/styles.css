@@ -1,8 +1,7 @@
-.england-castles,
-.scotland-castles,
-.wales-castles,
-.northernireland-castles {
-    display: hidden;
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900");
+
+body {
+    font-family: 'Raleway', sans-serif;
 }
 
 /*--------------------------------------------Heading and subheading*/
@@ -48,12 +47,21 @@
 /*--------------------------------------------Castles*/
 
 .castles-main {
+    padding: 50px;
     background-color: #ffffff;
-    padding: 30px;
 }
 
 .castles {
     text-align: center;
+}
+
+.castle-styles {
+    text-transform: lowercase;
+    padding: 15px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 500;
+    
 }
 
 /*--------------------------------------------Filters*/

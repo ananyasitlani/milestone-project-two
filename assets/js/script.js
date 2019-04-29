@@ -48,7 +48,7 @@ $(document).ready(function() {
     $(".northernireland").click(function(){
             $('.england-castles').slideUp('1000');
             $('.scotland-castles').slideUp('1000');
-            $('.wales-castles').slideUp('1000');('slow');
+            $('.wales-castles').slideUp('1000');
             $('.northernireland-castles').slideToggle('1000');
         });
 });
