@@ -1,0 +1,94 @@
+/*--------------------------------------------Heading and subheading*/
+
+.heading {
+    text-transform: uppercase;
+    text-align: center;
+    color: 	#181818;
+    padding: 20px;
+    display: block;
+}
+
+.castle-image {
+    width: 10%;
+}
+
+.castle-one {
+    float: right;
+}
+
+.sub-heading {
+    text-align: center;
+    color: 	#ffffff;
+    background-color: #320e3b;
+}
+
+/*--------------------------------------------Countries*/
+
+.country-backdrop {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.country {
+    text-align: center;
+    background-color: #6E7DAB;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+/*--------------------------------------------Cities*/
+
+.city {
+    text-align: center;
+}
+
+/*--------------------------------------------Cities*/
+
+.main-filters {
+    background-color: #f9f9f9;
+}
+
+.filter {
+    text-align: center;
+    padding: 20px;
+}
+
+/*--------------------------------------------Reset*/
+
+.reset {
+    padding: 15px;
+}
+
+.reset-button {
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    background-color: #320e3b;
+    border-radius: 50px;
+    letter-spacing: 2px;
+}
+
+/*--------------------------------------------Map*/
+
+.map {
+    text-align: center;
+    padding: 80px;
+}
+
+/*--------------------------------------------Results*/
+
+.results {
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+/*--------------------------------------------Footer*/
+
+.footer {
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: black;
+}
