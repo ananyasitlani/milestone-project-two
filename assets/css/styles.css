@@ -38,13 +38,18 @@
     letter-spacing: 2px;
 }
 
-/*--------------------------------------------Cities*/
+/*--------------------------------------------Castles*/
 
-.city {
+.castles-main {
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.castles {
     text-align: center;
 }
 
-/*--------------------------------------------Cities*/
+/*--------------------------------------------Filters*/
 
 .main-filters {
     background-color: #f9f9f9;
