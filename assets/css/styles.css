@@ -8,6 +8,7 @@ body {
 
 .heading {
     text-transform: uppercase;
+    letter-spacing: 0.5px;
     text-align: center;
     color: 	#181818;
     padding: 20px;
@@ -28,11 +29,14 @@ body {
     background-color: #320e3b;
 }
 
+.grey-backdrop {
+    background-color: #f9f9f9;
+}
+
 /*--------------------------------------------Countries*/
 
-.country-backdrop {
-    background-color: #f9f9f9;
-    padding: 20px;
+.country-style {
+    padding: 40px;
 }
 
 .country {
@@ -66,23 +70,23 @@ body {
 
 /*--------------------------------------------Filters*/
 
-.main-filters {
-    background-color: #f9f9f9;
-}
-
 .filter {
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    font-size: 16px;
+    font-weight: 300;
 }
 
 /*--------------------------------------------Reset*/
 
 .reset {
-    padding: 15px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
 }
 
 .reset-button {
-    text-align: center;
+    display: inline-block;
     padding: 10px;
     color: #ffffff;
     background-color: #320e3b;
@@ -100,7 +104,6 @@ body {
 /*--------------------------------------------Results*/
 
 .results {
-    background-color: #f9f9f9;
     padding: 30px;
 }
 
