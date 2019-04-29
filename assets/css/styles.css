@@ -1,3 +1,10 @@
+.england-castles,
+.scotland-castles,
+.wales-castles,
+.northernireland-castles {
+    display: hidden;
+}
+
 /*--------------------------------------------Heading and subheading*/
 
 .heading {
