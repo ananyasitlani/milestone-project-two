@@ -25,6 +25,7 @@ $(document).ready(function() {
         $('.northernireland').fadeTo(1000, 1);
     });
     });
+
 // Countries to Castles 
 
     $(".england").click(function(){
@@ -51,5 +52,23 @@ $(document).ready(function() {
             $('.wales-castles').slideUp('1000');
             $('.northernireland-castles').slideToggle('1000');
         });
+        
+    // castle selction
+    
+    $(".castle-styles").on("click", function() {
+    
+    })
+    
+    // reset button
+    
+    $(".reset-button").click(function(){
+            $('.england-castles').slideUp('1000');
+            $('.scotland-castles').slideUp('1000');
+            $('.wales-castles').slideUp('1000');
+            $('.northernireland-castles').slideUp('1000');
+            $('.filter').removeProp('.filter');
+    });
+    
+    
 });
 
