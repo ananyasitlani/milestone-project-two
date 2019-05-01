@@ -53,11 +53,11 @@ $(document).ready(function() {
             $('.northernireland-castles').slideToggle('1000');
         });
         
-    // castle selction
+    // castles and maps
     
-    $(".castle-styles").on("click", function() {
+
     
-    })
+
     
     // reset button
     
