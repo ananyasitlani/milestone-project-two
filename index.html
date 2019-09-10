@@ -7,6 +7,12 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                emailjs.init("user_Qa5h7669U2nJIkvwGcyLl");
+            })();
+        </script>
     </head>
     <body>
         <section class="container-fluid">
@@ -212,7 +218,7 @@
                 <div class="lightblue-backdrop col-xs-12">
                     <h3 class="form-intro"> Have an idea of which set of castles we should do next?</h3>
                     <h4 class="form-intro"> Great! Fill out the form below and let us know!</h4>
-                    <form>
+                    <form onsubmit="return sendMail(this);" method="POST">
                         <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
                         <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
                         <input type="text" name="location" class="form-control" id="location" placeholder="Country" required/>
@@ -235,5 +241,6 @@
         <script src="assets/js/maps.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
         <script src="assets/js/script.js"></script>
+        <script src="assets/js/sendEmail.js"></script>
         </body>
 </html>
