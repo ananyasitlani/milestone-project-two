@@ -9,39 +9,38 @@ body {
 .heading {
     text-transform: uppercase;
     letter-spacing: 0.5px;
-    text-align: center;
-    color: 	#181818;
+    color: 	#ffffff;
     padding: 20px;
-    display: block;
-}
-
-.castle-image {
-    width: 10%;
-}
-
-.castle-one {
-    float: right;
+    display: inline-block;
 }
 
 .sub-heading {
     text-align: center;
-    color: 	#ffffff;
-    background-color: #320e3b;
+    color: #ffffff;
 }
 
 .grey-backdrop {
-    background-color: #f9f9f9;
+    background-color: #202123;
+}
+
+.darkblue-backdrop {
+    background-color: #30555D;
+}
+
+.lightblue-backdrop {
+    background-color: #5bc5d8;
+    padding: 20px;
 }
 
 /*--------------------------------------------Countries*/
 
 .country-style {
-    padding: 40px;
+    padding: 90px;
 }
 
 .country {
     text-align: center;
-    background-color: #6E7DAB;
+    background-color: #5bc5d8;
     color: #ffffff;
     padding: 12px;
     border-radius: 50px;
@@ -52,7 +51,6 @@ body {
 
 .castles-main {
     padding: 50px;
-    background-color: #ffffff;
 }
 
 .castles {
@@ -84,6 +82,7 @@ body {
     padding: 30px;
     font-size: 16px;
     font-weight: 300;
+    color: #ffffff;
 }
 
 /*--------------------------------------------Reset*/
@@ -98,7 +97,7 @@ body {
     display: inline-block;
     padding: 10px;
     color: #ffffff;
-    background-color: #320e3b;
+    background-color: #5bc5d8;
     border-radius: 50px;
     letter-spacing: 2px;
 }
@@ -106,6 +105,18 @@ body {
 /*--------------------------------------------Map*/
 
 div#map {min-height: 600px;}
+
+/*--------------------------------------------Form*/
+
+.form-intro {
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+
+.form-control {
+    padding: 10px;
+    margin: 10px;
+}
 
 /*--------------------------------------------Results*/
 
