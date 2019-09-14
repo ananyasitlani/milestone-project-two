@@ -9,40 +9,47 @@ function initMap() {
     
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     
-    var castles = [
-        { lat: 51.483860, lng: -0.606490 },
-        { lat: 51.248844, lng: 0.630249},
-        { lat: 51.129524, lng: 1.321235},
-        { lat: 52.279472, lng: -1.585041},
-        { lat: 51.001728, lng: 0.543282},
-        { lat: 53.234745, lng: -0.540397},
-        { lat: 54.77546, lng: -1.576635},
-        { lat: 52.36722, lng: -2.722394},
-        { lat: 55.948814, lng: -3.200283},
-        { lat: 57.014683, lng: -3.391364},
-        { lat: 57.04142, lng: -3.228998},
-        { lat: 56.77357, lng: -3.857812},
-        { lat: 56.23773, lng: -5.073967},
-        { lat: 57.524105, lng: -3.925715},
-        { lat: 57.274677, lng: -5.513736},
-        { lat: 56.945793, lng: -2.200614},
-        { lat: 53.280052, lng: -3.825447},
-        { lat: 51.676678, lng: -4.91993},
-        { lat: 51.856617, lng: -3.93721},
-        { lat: 52.859726, lng: -4.108152},
-        { lat: 51.57615, lng: -3.220367},
-        { lat: 53.225117, lng: -4.094073},
-        { lat: 51.48149, lng: -3.180798},
-        { lat: 51.64453, lng: -2.673271},
-        { lat: 54.64268, lng: -5.942325},
-        { lat: 54.713737, lng: -5.806532},
-        { lat: 54.96765, lng: -5.959837},
-        { lat: 55.212536, lng: -6.575105},
-        { lat: 54.182605, lng: -7.36255},
-        { lat: 54.34579, lng: -7.643679},
-        { lat: 54.46123, lng: -6.085229},
-        { lat: 54.4608, lng: -6.3294}
-    ];
+    // var countries = {
+    //     'england': [51.509865, -0.118092],
+    //     'scotland': [55.860916, -4.251433], 
+    //     'wales': [52.817703, -3.872680], 
+    //     'northernireland': [54.607868, -5.926437]
+    // };
+    
+    var castles = {
+        'windsorcastle': [51.483860, -0.606490 ],
+        'leedscastle': [51.248844, 0.630249],
+        'dovercastle': [51.129524, 1.321235],
+        'warwickcastle': [52.279472, -1.585041],
+        'bodiamcastle': [51.001728, 0.543282],
+        'lincolncastle': [53.234745, -0.540397],
+        'durhamcastle': [54.77546, -1.576635],
+        'ludlowcastle':[52.36722, -2.722394],
+        'edinburghcastle': [55.948814, -3.200283],
+        'braemarcastle': [57.014683, -3.391364],
+        'balmoralcastle': [57.04142, -3.228998],
+        'blaircastle': [56.77357, -3.857812],
+        'inveraraycastle': [56.23773, -5.073967],
+        'cawdorcastlel': [57.524105, -3.925715],
+        'eileandonancastle': [57.274677, -5.513736],
+        'dunnottarcastle': [56.945793, -2.200614],
+        'conwycastle': [53.280052, -3.825447],
+        'pembrokecastle': [51.676678, -4.91993],
+        'carregcennencastle': [51.856617, -3.93721],
+        'harlechcastle': [ 52.859726, -4.108152],
+        'caerphillycastle': [51.57615, -3.220367],
+        'penrhyncastle': [53.225117, -4.094073],
+        'cardiffcastle': [51.48149, -3.180798],
+        'chepstowcastle': [51.64453, -2.673271],
+        'belfastcastle': [54.64268, -5.942325],
+        'carrickferguscastle': [54.713737, -5.806532],
+        'glenarmcastle': [54.96765, -5.959837],
+        'dunlucecastle': [55.212536, -6.575105],
+        'cromcastle': [54.182605, -7.36255],
+        'enniskillencastle': [54.34579, -7.643679],
+        'hillsboroughcastle': [54.46123, -6.085229],
+        'lurgancastle': [54.4608, -6.3294]
+    };
     
     var markers = castles.map(function(location, i) {
         return new google.maps.Marker({
