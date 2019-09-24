@@ -9,24 +9,24 @@ function initMap() {
     
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     
-    var countries = [{
-        'england': {
-            longitude: 51.509865,
-            latitude: -0.118092
-        },
-        'scotland': {
-            longitude: 55.860916,
-            latitude: -4.251433
-        },
-        'wales': {
-            longitude: 52.817703,
-            latitude: -3.872680
-        },
-        'northernireland': {
-            longitude: 54.607868,
-            latitude: -5.926437
-        }
-    }];
+    // var countries = [{
+    //     'england': {
+    //         longitude: 51.509865,
+    //         latitude: -0.118092
+    //     },
+    //     'scotland': {
+    //         longitude: 55.860916,
+    //         latitude: -4.251433
+    //     },
+    //     'wales': {
+    //         longitude: 52.817703,
+    //         latitude: -3.872680
+    //     },
+    //     'northernireland': {
+    //         longitude: 54.607868,
+    //         latitude: -5.926437
+    //     }
+    // }];
     
     var castles = [{
         'windsorcastle': {
@@ -169,10 +169,10 @@ function initMap() {
         
     });
 
-    var markerCluster = new MarkerCluster(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+    var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 
 $ (".castle-styles").click(function(){
-       $(this).toggleClass("markerCluster"); 
+       $(this).toggleClass("markerClusterer"); 
     });
+    
 }
-

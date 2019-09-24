@@ -55,7 +55,9 @@ $(document).ready(function() {
         
     // castles and maps
     
-
+$ (".castle-styles").click(function(){
+       $(this).toggleClass("chosen"); 
+    });
     
 
     

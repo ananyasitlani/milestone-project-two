@@ -66,13 +66,14 @@ body {
     
 }
 
-.choose-castle {
-    text-transform: lowercase;
-    padding: 15px;
+.chosen {
+    background-color: #30555D;
+    color: #ffffff;
+    border-radius: 50px;
+    letter-spacing: 2px;
     letter-spacing: 1px;
     font-size: 18px;
     font-weight: 500;
-    color: #6E7DAB;
 }
 
 /*--------------------------------------------Filters*/
