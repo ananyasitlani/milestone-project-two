@@ -7,7 +7,7 @@ function initMap() {
         }
     });
     
-    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
     
     var countries = [{
         'england': {
@@ -169,11 +169,10 @@ function initMap() {
         
     });
 
-    var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
+    var markerCluster = new MarkerCluster(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
 
-    // function choosecastle () {
-    //     $('#castles').onwclick(function) {
-    //         $(."windsorcastle").add(markers)
-    //     }
-    // }
+$ (".castle-styles").click(function(){
+       $(this).toggleClass("markerCluster"); 
+    });
 }
+
