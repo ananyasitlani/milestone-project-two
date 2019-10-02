@@ -1,4 +1,5 @@
 function initMap() {
+    
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 5.5,
         center: {
@@ -7,27 +8,11 @@ function initMap() {
         }
     });
     
+    var bounds = new google.maps.LatLngBounds();
+    
     var labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-    
-    // var countries = [{
-    //     'england': {
-    //         longitude: 51.509865,
-    //         latitude: -0.118092
-    //     },
-    //     'scotland': {
-    //         longitude: 55.860916,
-    //         latitude: -4.251433
-    //     },
-    //     'wales': {
-    //         longitude: 52.817703,
-    //         latitude: -3.872680
-    //     },
-    //     'northernireland': {
-    //         longitude: 54.607868,
-    //         latitude: -5.926437
-    //     }
-    // }];
-    
+ 
+    // array of castles for markers
     var castles = [{
         'windsorcastle': {
             longitude: 51.483860,
@@ -159,20 +144,17 @@ function initMap() {
         },
         
     }];
-
     
-    var markers = castles.map(function(location, i) {
-        return new google.maps.Marker({
-            position: location,
-            label: labels[i % labels.length]
-        });
-        
+    // loop through markers
+    for( i = 0; i < castles.length; i++ ){
+        addMarker("The lat is " + castles[i][0]+" and the long is "+ castles[i][1]);
+}
+    // function to show markers on map
+    function addMarker(marks){
+        var marker = new google.maps.Marker({
+        position: marks.castles,
+        map: map
     });
-
-    var markerCluster = new MarkerClusterer(map, markers, { imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m' });
-
-$ (".castle-styles").click(function(){
-       $(this).toggleClass("markerClusterer"); 
-    });
+    }
     
 }

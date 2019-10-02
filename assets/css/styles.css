@@ -115,8 +115,7 @@ div#map {min-height: 600px;}
 }
 
 .form-control {
-    padding: 10px;
-    margin: 10px;
+    margin-bottom: 10px;
 }
 
 /*--------------------------------------------Results*/
