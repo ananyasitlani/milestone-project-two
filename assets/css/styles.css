@@ -54,11 +54,15 @@ body {
 }
 
 .castle-styles {
+    background-color: #5bc5d8;
+    color: #000000;
     text-transform: lowercase;
     padding: 15px;
+    margin: 20px;
     letter-spacing: 1px;
     font-size: 18px;
     font-weight: 500;
+    border: none;
     
 }
 
